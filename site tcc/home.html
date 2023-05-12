@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+    <html lang=pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../site tcc/img/favi.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../site tcc/css/home.css">
+
+        <title>Gaia</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon" ></i> Gaia
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#programadores" class="nav__link ">Programadores</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Doenças Fúngicas</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="../site tcc/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Plantas <br> Ornamentais
+                        </h1>
+                        <p   class="home__description">
+                            Plantas ornamentais são aquelas cultivadas devido seus atributos físicos de beleza, como floração, folhagem, aspecto do caule, etc. 
+                            São espécies utilizadas para a decoração interna dos ambientes e em ações paisagísticas em jardins e outras áreas externas. 
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Veja mais <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="../site tcc/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Benefícios Das <br> Plantas Ornamentais
+                        </h2>
+
+                        <p class="about__description">
+                            Segundo dados do Ibraflor – Instituto Brasileiro de Floricultura – em um ambiente interno pode haver até 100 tipos diferentes de poluentes no ar, 
+                            10 vezes mais que em áreas externas. Isso porque muitos elementos tóxicos, como o formol e corante de tintas estão presentes em madeiras, assim 
+                            como a amônia em produtos de limpeza. Nesse aspecto, as plantas ornamentais, sem exceção, atuam como filtros de ar naturais, a única diferença é 
+                            que algumas conseguem absorver melhor que outras as substâncias, como samambaias e babosas, e também benefícios para a saúde humana que vai além 
+                            do prazer visual. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container" id="steps section container">
+                <div class="steps__bg">
+                    <div class="about__container grid">
+                        <img src="../site tcc/img/succulents-g8f58dafe3_640.jpg" alt="" class="about__img">
+    
+                        <div class="about__data">
+                            <h2 class="section__title about__title">
+                                Faturamento e <br> Geração de Empregos
+                            </h2>
+    
+                            <p class="about__description">
+                                A cultura de cultivo de plantas ornamentais no Brasil está em constante crescimento, mesmo com a crise econômica dos últimos 7 ou 8 anos. 
+                                Em 2014 o setor teve um faturamento de R$ 5,7 bilhões. Em 2015, o faturamento aumentou para R$ 6,2 bilhões, para então alcançar R$ 6,65 bilhões 
+                                em 2016 e R$ 7,2 em 2017, uma alta de 9%. Além disso, o setor gera quase 200 mil empregos diretamente. 78700 (39,53%) trabalham diretamente com a produção, 8400 (4,22%) atuam no serviço de distribuição, enquanto mais de 53%, 105500 pessoas estão no varejo. Cerca de 6500 (3,26%) atuam em outras funções.  
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--==================== PRODUCTS ====================-->
+
+            <section class="programadores" id="programadores">
+                <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+                    <h1 class="section__title-center steps__title">
+                        Programadores
+                    </h1>
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+      <div class="slider__item">
+        <img class="slider__image" src="../site tcc/img/icon1.jpg" alt="Image">
+        <div class="slider__info">
+          <h1>Arthur Fukunaga<br>17 Anos<br>Designer e Programador Front-Eding</h1>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="../site tcc/img/icon2.jpg" alt="Image">
+        <div class="slider__info">
+          <h1>João Carlos<br>17 Anos<br>Programador Back-Ending</h1>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="../site tcc/img/icon3.jpg" alt="Image">
+        <div class="slider__info">
+          <h1>Ingrid Sant Anna<br>17 Anos<br>Programador Back-Ending</h1>
+        </div>
+      </div>
+      
+    </div>
+    <div class="slider__nav" style="display: flex;justify-content: center;">
+    </div>
+  </div>
+            </section>
+            <br><br>
+
+            <!--==================== PRODUCTS ====================-->
+            <h1 class="section__title-center">
+                Doenças Fúngicas
+            </h1>
+            <section class="products" id="products">
+                                <div class="home__container container grid">
+                                    <img src="../site tcc/img/podridao-negra.jpg" alt="" class="home__img">
+                
+                                    <div class="home__data">
+                                        <h2 class="section__title about__title">
+                                            Podridão Negra
+                                        </h2>
+                                        <p class="home__description">
+                                            A Podridão Negra, de fato é muito assustadora e pode ser bem devastadora, mas com os cuidados certos é possível evitá-la sem grandes prejuízos. 
+                                            Para começar, ela é causada pelos fungos Pythium ultimum e Phytophthora cactora, que são fungos de solo que necessitam de ambiente encharcado com 
+                                            água livre para se proliferarem, em  água livre por um período na superfície da planta e quando essas condições existem e os fungo estão presentes
+                                             iniciam a infecção, geralmente pela raiz, mas podendo ser também pela parte alta da planta e aí inicia-se uma podridão de cor escura que vai 
+                                             subindo pelo rizoma, depois bulbo até chegar a folha que costuma cair ainda meio verde ou então a folha começa a apresentar o sintoma de podridão 
+                                             escura que rapidamente desce e vai invadindo o bulbo até chegar na base da planta e infectar o restante. A evolução desta doença é bem rápida e 
+                                             pode levar a planta à morte em poucos dias ou semanas, dependendo do porte da orquídea atacada e do estado dela. 
+
+                                        </p>
+                                    </div>
+                
+                                    <div class="home__social">
+
+                                    </div>
+                                </div>
+                            </section>
+                
+                            <!--==================== ABOUT ====================-->
+                            <section class="about section container" id="about">
+                                <div class="about__container grid">
+                                    <img src="../site tcc/img/canela-seca.webp" alt="" class="about__img">
+                
+                                    <div class="about__data">
+                                        <h2 class="section__title about__title">
+                                            Canela seca
+                                        </h2>
+                
+                                        <p class="about__description">
+                                            Nesse grupo estão a Fusariose causada, principalmente pelo fungo Fusarium Oxysporum Cattleyae e a Rhizoctoniose causada pelo fungo Rhizoctonia 
+                                            solani. Ambas as doenças são causadas por fungos de solo e possuem características semelhantes, embora algumas diferenças marcantes. No caso da 
+                                            Fusariose o fungo penetra na planta, geralmente pelas raízes ou ferimentos e coloniza o sistema vascular da planta o que causa o seu bloqueio e 
+                                            aí a planta começa a ter um definhamento lento e progressivo, depois aparecem os sintomas mais severos de deficiência nutricional, algumas manchas 
+                                            e eventualmente pode surgir uma podridão seca, começando pelo rizoma e subindo gradativamente pelo bulbo da planta, daí o nome canela seca. 
+                                            Eventualmente plantas atacadas conseguem conviver por um longo tempo com a doença e sua parte mais jovem consegue se manter saudável sem presença 
+                                            marcante do fungo, mas muitas vezes a doença pode matar a planta rapidamente também. Uma característica marcante da fusariose é quando o rizoma é 
+                                            cortado em local que ainda não está seco, podendo-se notar um anel avermelhado/arroxeado, o que o diferencia da rhizoctoniose. Na Rhizoctoniose os 
+                                            sintomas são relativamente parecidos, podendo ou não ter uma evolução mais rápida. Em plantas mais jovens podem ocorrer uma podridão mole de cor 
+                                            parda levando a planta a morte rapidamente. Quando uma planta com rhizoctoniose é cortada no rizoma ainda vivo não é possível notar o anel arroxeado, 
+                                            o que ajuda a separar estas duas doenças. 
+ 
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="home" id="home">
+                                <div class="home__container container grid">
+                                    <img src="../site tcc/img/antracnose.jpg" alt="" class="home__img">
+                
+                                    <div class="home__data">
+                                        <h2 class="section__title about__title">
+                                            Antacnose
+                                        </h2>
+                                        <p class="home__description">
+                                            A antracnose é uma das doenças mais comuns em nossas orquídeas, todavia, raramente é perigosa, mas pode “enfeiar” as orquídeas. É causada pelo 
+                                            fungo Colletotrichum gleosporieoides, que também ataca uma série de outras plantas. Esta doença se caracteriza por grandes lesões, normalmente 
+                                            mais circulares com o centro meio afundado. A lesão é geralmente de cor parda a negra com círculos concêntricos dentro e seu contorno podendo ter 
+                                            um halo amarelado. No centro dela pode aparecer uma região acinzentada ou meio rosada, onde se encontram as estruturas reprodutivas do fungo. As 
+                                            lesões podem ocorrer também na ponta das folhas, descendo até quase o centro, mas sem o ultrapassar normalmente e em casos menos comuns podem 
+                                            aparecer como lesões afundas no bulbo, mas normalmente não o levando a apodrecimento. Condições que costumam favorecer essa doença podem ser excesso 
+                                            de luminosidade e queimaduras de sol, além de partes mais velhas das plantas estarem mais sujeitas a desenvolverem as lesões. O clima quente e úmido 
+                                            com baixa ventilação também favorece essa doença e sua transmissão principal é por respingo de água de uma lesão para uma folha sadia.  
+
+                                        </p>
+                                    </div>
+                
+                                    <div class="home__social">
+
+                                    </div>
+                                </div>
+                            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs"> 
+                <div class="footer__container container grid"> 
+                    <div class="footer__content"> 
+                        <a href="#" class="footer__logo"> 
+                            <i class="ri-leaf-line footer__logo-icon"></i> Gaia </a> 
+                            <h3 class="footer__title"> Nos acompanhe para <br> mais novidades </h3> 
+                            <div class="footer__subscribe"> 
+                                <input type="email" placeholder="Entre com seu email" class="footer__input">
+                                 <button class="button button--flex footer__button"> Mais <i class="ri-arrow-right-up-line button__icon"></i> 
+                                </button>
+                             </div> 
+                            </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Nosso endereço</h3>
+    
+                        <ul class="footer__data">
+                            <li class="footer__information">1234 - Peru</li>
+                            <li class="footer__information">La Libertad - 43210</li>
+                            <li class="footer__information">123-456-789</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Contatenos</h3>
+    
+                        <ul class="footer__data">
+                            <li class="footer__information">+999 888 777</li>
+                            
+                            <div class="footer__social">
+                                <a href="https://www.facebook.com/" class="footer__social-link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="footer__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://twitter.com/" class="footer__social-link">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">
+                            Nós aceitamos todos os cartões de crédito
+                        </h3>
+    
+                        <div class="footer__cards">
+                            <img src="../site tcc/img/card1.png" alt="" class="footer__card">
+                            <img src="../site tcc/img/card2.png" alt="" class="footer__card">
+                            <img src="../site tcc/img/card3.png" alt="" class="footer__card">
+                            <img src="../site tcc/img/card4.png" alt="" class="footer__card">
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="footer__copy">&#169; Gaia. Todos os direitos reservados</p>
+            </section>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
